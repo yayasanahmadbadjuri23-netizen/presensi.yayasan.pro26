@@ -98,7 +98,7 @@ const shiftSchedule = {
                         this.scheduleData[key][emp.id][day] = 'Libur';
                     } else {
                         // Random shift for weekdays
-                        const shifts = ['Pagi', 'Pagi', 'Pagi', 'Siang', 'Malam']; // Weighted towards Pagi
+                        const shifts = ['Sore', 'Sore', 'Sore', 'Malam', 'Malam']; // Weighted towards Pagi
                         const randomShift = shifts[Math.floor(Math.random() * shifts.length)];
                         this.scheduleData[key][emp.id][day] = randomShift;
                     }
